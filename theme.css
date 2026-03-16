@@ -296,18 +296,35 @@ body {
 
 /* H1 with accent bottom border */
 .markdown-rendered h1,
-.markdown-source-view.mod-cm6 .cm-header-1,
 .inline-title {
   letter-spacing: -0.02em;
   padding-bottom: 0.4em;
   border-bottom: 2.5px solid var(--interactive-accent);
 }
 
+.markdown-source-view.mod-cm6 .HyperMD-header-1 {
+  letter-spacing: -0.02em;
+  padding-bottom: 0.4em;
+  border-bottom: 2.5px solid var(--interactive-accent);
+}
+
+.markdown-source-view.mod-cm6 .cm-header-1 {
+  border-bottom: none;
+}
+
 /* H2 with light bottom border */
-.markdown-rendered h2,
-.markdown-source-view.mod-cm6 .cm-header-2 {
+.markdown-rendered h2 {
   padding-bottom: 0.2em;
   border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-header-2 {
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.markdown-source-view.mod-cm6 .cm-header-2 {
+  border-bottom: none;
 }
 
 /* ── Blockquotes ────────────────────────────────────────── */
