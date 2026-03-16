@@ -1,0 +1,507 @@
+/*
+ * Amber - An Obsidian theme
+ * Warm, earthy colour palette inspired by Anthropic's design language.
+ * Serif body text, sans-serif headings, warm accents.
+ *
+ * Author: Sam McLeod (smcleod.net)
+ * Licence: MIT
+ */
+
+/* ── Light mode ─────────────────────────────────────────── */
+
+.theme-light {
+  --accent-h: 16;
+  --accent-s: 64%;
+  --accent-l: 53%;
+
+  --color-accent: #d97757;
+  --color-accent-1: #d97757;
+  --color-accent-2: #c6613f;
+
+  --background-primary: #ffffff;
+  --background-primary-alt: #faf9f5;
+  --background-secondary: #f5f3ed;
+  --background-secondary-alt: #eae8e0;
+  --background-modifier-border: #e8e6dc;
+  --background-modifier-border-hover: #d9d6cc;
+  --background-modifier-border-focus: #d97757;
+  --background-modifier-error-rgb: 228, 68, 85;
+  --background-modifier-error: #e44455;
+  --background-modifier-error-hover: #cc3344;
+  --background-modifier-success-rgb: 120, 140, 93;
+  --background-modifier-success: #788c5d;
+  --background-modifier-message: #fdf0e8;
+  --background-modifier-form-field: #ffffff;
+
+  --text-normal: #141413;
+  --text-muted: #6b6560;
+  --text-faint: #b0aea5;
+  --text-on-accent: #ffffff;
+  --text-on-accent-inverted: #141413;
+  --text-error: #e44455;
+  --text-error-hover: #cc3344;
+  --text-accent: #d97757;
+  --text-accent-hover: #c6613f;
+  --text-selection: rgba(217, 119, 87, 0.18);
+  --text-highlight-bg: rgba(217, 119, 87, 0.22);
+
+  --interactive-normal: #f5f3ed;
+  --interactive-hover: #eae8e0;
+  --interactive-accent: #d97757;
+  --interactive-accent-hover: #c6613f;
+
+  --link-color: #d97757;
+  --link-color-hover: #c6613f;
+  --link-external-color: #d97757;
+  --link-external-color-hover: #c6613f;
+  --link-unresolved-color: #b0aea5;
+  --link-unresolved-opacity: 0.7;
+
+  --tag-color: #d97757;
+  --tag-background: #fdf0e8;
+
+  --code-normal: #141413;
+  --code-background: #f5f3ed;
+  --code-comment: #b0aea5;
+  --code-function: #d97757;
+  --code-keyword: #9a5b3a;
+  --code-important: #9a5b3a;
+  --code-string: #788c5d;
+  --code-tag: #b54c30;
+  --code-value: #c4853c;
+  --code-operator: #6b6560;
+  --code-property: #b54c30;
+
+  --blockquote-border-color: #d97757;
+  --blockquote-background-color: #faf9f5;
+  --blockquote-border-thickness: 4px;
+  --blockquote-color: #3d3530;
+  --blockquote-font-style: italic;
+
+  --callout-default: #d97757;
+
+  --table-header-background: #d97757;
+  --table-header-color: #ffffff;
+  --table-row-even-background: #faf9f5;
+  --table-border-color: #e8e6dc;
+
+  --titlebar-background: #141413;
+  --titlebar-background-focused: #141413;
+  --titlebar-text-color: #faf9f5;
+  --titlebar-text-color-focused: #faf9f5;
+
+  --tab-outline-color: #e8e6dc;
+
+  --nav-item-color: #6b6560;
+  --nav-item-color-hover: #141413;
+  --nav-item-color-active: #d97757;
+  --nav-item-background-hover: #fdf0e8;
+  --nav-item-background-active: #fdf0e8;
+
+  --graph-line: #e8e6dc;
+  --graph-node: #d97757;
+  --graph-node-focused: #b54c30;
+  --graph-node-tag: #788c5d;
+  --graph-node-attachment: #c4853c;
+
+  --h1-color: var(--text-normal);
+  --h2-color: #d97757;
+  --h3-color: var(--text-normal);
+  --h4-color: #6b6560;
+  --h5-color: #6b6560;
+  --h6-color: #b0aea5;
+
+  --checkbox-color: #d97757;
+  --checkbox-color-hover: #c6613f;
+  --checklist-done-color: #b0aea5;
+
+  --icon-color: #6b6560;
+  --icon-color-hover: #d97757;
+  --icon-color-active: #d97757;
+  --icon-color-focused: #d97757;
+
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(20, 20, 19, 0.12);
+  --scrollbar-active-thumb-bg: rgba(20, 20, 19, 0.25);
+
+  --indentation-guide-color: #e8e6dc;
+  --indentation-guide-color-active: #d9d6cc;
+
+  --tooltip-bg: #141413;
+  --tooltip-color: #faf9f5;
+}
+
+/* ── Dark mode ──────────────────────────────────────────── */
+
+.theme-dark {
+  --accent-h: 16;
+  --accent-s: 58%;
+  --accent-l: 58%;
+
+  --color-accent: #e08a6e;
+  --color-accent-1: #e08a6e;
+  --color-accent-2: #d97757;
+
+  --background-primary: #1a1918;
+  --background-primary-alt: #222120;
+  --background-secondary: #2a2827;
+  --background-secondary-alt: #333130;
+  --background-modifier-border: #3d3a36;
+  --background-modifier-border-hover: #504d48;
+  --background-modifier-border-focus: #d97757;
+  --background-modifier-error-rgb: 228, 68, 85;
+  --background-modifier-error: #e44455;
+  --background-modifier-error-hover: #cc3344;
+  --background-modifier-success-rgb: 120, 140, 93;
+  --background-modifier-success: #788c5d;
+  --background-modifier-message: rgba(217, 119, 87, 0.15);
+  --background-modifier-form-field: #222120;
+
+  --text-normal: #e8e6dc;
+  --text-muted: #9d9790;
+  --text-faint: #6b6560;
+  --text-on-accent: #ffffff;
+  --text-on-accent-inverted: #1a1918;
+  --text-error: #e44455;
+  --text-error-hover: #cc3344;
+  --text-accent: #e08a6e;
+  --text-accent-hover: #d97757;
+  --text-selection: rgba(217, 119, 87, 0.22);
+  --text-highlight-bg: rgba(217, 119, 87, 0.28);
+
+  --interactive-normal: #2a2827;
+  --interactive-hover: #333130;
+  --interactive-accent: #d97757;
+  --interactive-accent-hover: #c6613f;
+
+  --link-color: #e08a6e;
+  --link-color-hover: #d97757;
+  --link-external-color: #e08a6e;
+  --link-external-color-hover: #d97757;
+  --link-unresolved-color: #6b6560;
+  --link-unresolved-opacity: 0.7;
+
+  --tag-color: #e08a6e;
+  --tag-background: rgba(217, 119, 87, 0.15);
+
+  --code-normal: #e8e6dc;
+  --code-background: #2a2827;
+  --code-comment: #6b6560;
+  --code-function: #e08a6e;
+  --code-keyword: #c4853c;
+  --code-important: #c4853c;
+  --code-string: #a3b882;
+  --code-tag: #e08a6e;
+  --code-value: #c4853c;
+  --code-operator: #9d9790;
+  --code-property: #e08a6e;
+
+  --blockquote-border-color: #d97757;
+  --blockquote-background-color: #222120;
+  --blockquote-border-thickness: 4px;
+  --blockquote-color: #c5c0b8;
+  --blockquote-font-style: italic;
+
+  --callout-default: #d97757;
+
+  --table-header-background: #d97757;
+  --table-header-color: #ffffff;
+  --table-row-even-background: #222120;
+  --table-border-color: #3d3a36;
+
+  --titlebar-background: #141413;
+  --titlebar-background-focused: #141413;
+  --titlebar-text-color: #e8e6dc;
+  --titlebar-text-color-focused: #e8e6dc;
+
+  --tab-outline-color: #3d3a36;
+
+  --nav-item-color: #9d9790;
+  --nav-item-color-hover: #e8e6dc;
+  --nav-item-color-active: #e08a6e;
+  --nav-item-background-hover: rgba(217, 119, 87, 0.1);
+  --nav-item-background-active: rgba(217, 119, 87, 0.15);
+
+  --graph-line: #3d3a36;
+  --graph-node: #d97757;
+  --graph-node-focused: #e08a6e;
+  --graph-node-tag: #a3b882;
+  --graph-node-attachment: #c4853c;
+
+  --h1-color: var(--text-normal);
+  --h2-color: #e08a6e;
+  --h3-color: var(--text-normal);
+  --h4-color: #9d9790;
+  --h5-color: #9d9790;
+  --h6-color: #6b6560;
+
+  --checkbox-color: #d97757;
+  --checkbox-color-hover: #c6613f;
+  --checklist-done-color: #6b6560;
+
+  --icon-color: #9d9790;
+  --icon-color-hover: #e08a6e;
+  --icon-color-active: #e08a6e;
+  --icon-color-focused: #e08a6e;
+
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(232, 230, 220, 0.1);
+  --scrollbar-active-thumb-bg: rgba(232, 230, 220, 0.2);
+
+  --indentation-guide-color: #3d3a36;
+  --indentation-guide-color-active: #504d48;
+}
+
+/* ── Typography ─────────────────────────────────────────── */
+
+body {
+  --font-text-theme: Georgia, "Times New Roman", Palatino, serif;
+  --font-monospace-theme: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  --font-interface-theme: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --line-height-normal: 1.65;
+
+  --inline-title-weight: 700;
+  --inline-title-size: 1.65em;
+  --bold-weight: 700;
+
+  --h1-size: 1.65em;
+  --h2-size: 1.4em;
+  --h3-size: 1.15em;
+  --h4-size: 1em;
+  --h5-size: 0.95em;
+  --h6-size: 0.9em;
+
+  --h1-weight: 700;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+
+  --heading-spacing: 0.5em;
+
+  --tag-size: 0.8em;
+  --tag-padding-x: 0.6em;
+  --tag-padding-y: 0.15em;
+  --tag-radius: 100px;
+  --tag-border-width: 0px;
+
+  --radius-s: 3px;
+  --radius-m: 5px;
+  --radius-l: 8px;
+}
+
+/* ── Heading styles ─────────────────────────────────────── */
+
+/* H1 with accent bottom border */
+.markdown-rendered h1,
+.markdown-source-view.mod-cm6 .cm-header-1,
+.inline-title {
+  letter-spacing: -0.02em;
+  padding-bottom: 0.4em;
+  border-bottom: 2.5px solid var(--interactive-accent);
+}
+
+/* H2 with light bottom border */
+.markdown-rendered h2,
+.markdown-source-view.mod-cm6 .cm-header-2 {
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* ── Blockquotes ────────────────────────────────────────── */
+
+.markdown-rendered blockquote {
+  border-radius: 0 6px 6px 0;
+  padding: 0.8em 1.2em;
+}
+
+/* ── Code blocks ────────────────────────────────────────── */
+
+.markdown-rendered pre {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  padding: 0.9em 1.1em;
+  line-height: 1.5;
+}
+
+.markdown-rendered code {
+  padding: 0.15em 0.35em;
+}
+
+/* ── Tables ─────────────────────────────────────────────── */
+
+.markdown-rendered table thead {
+  background: var(--interactive-accent);
+}
+
+.markdown-rendered table th {
+  font-family: var(--font-interface-theme);
+  font-weight: 600;
+  color: var(--text-on-accent);
+  padding: 0.6em 0.8em;
+}
+
+.markdown-rendered table td {
+  padding: 0.5em 0.8em;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* ── Tags ───────────────────────────────────────────────── */
+
+a.tag {
+  border-radius: var(--tag-radius);
+}
+
+/* ── Callouts ───────────────────────────────────────────── */
+
+.callout {
+  border-radius: var(--radius-m);
+}
+
+/* ── Horizontal rules ───────────────────────────────────── */
+
+.markdown-rendered hr {
+  border: none;
+  border-top: 1px solid var(--background-modifier-border);
+  margin: 2em 0;
+}
+
+/* ── Checkboxes ─────────────────────────────────────────── */
+
+input[type="checkbox"]:checked {
+  background-color: var(--interactive-accent);
+  border-color: var(--interactive-accent);
+}
+
+/* ── Search and inputs ──────────────────────────────────── */
+
+.search-input,
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  border-radius: var(--radius-m);
+}
+
+input:focus,
+.search-input:focus-within {
+  border-color: var(--interactive-accent);
+  box-shadow: 0 0 0 2px rgba(217, 119, 87, 0.15);
+}
+
+/* ── Buttons ────────────────────────────────────────────── */
+
+button.mod-cta {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-radius: var(--radius-m);
+  font-family: var(--font-interface-theme);
+  font-weight: 600;
+}
+
+button.mod-cta:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+/* ── Vault name in sidebar ──────────────────────────────── */
+
+.nav-header .vault-name {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* ── Status bar ─────────────────────────────────────────── */
+
+.status-bar {
+  border-top: 1px solid var(--background-modifier-border);
+  font-size: 0.8em;
+}
+
+/* ── Scrollbar refinements ──────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+}
+
+/* ── Selection ──────────────────────────────────────────── */
+
+::selection {
+  background: var(--text-selection);
+}
+
+/* ── Embedded notes ─────────────────────────────────────── */
+
+.markdown-embed {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-l);
+  border-left: 4px solid var(--interactive-accent);
+}
+
+/* ── Tooltips ───────────────────────────────────────────── */
+
+.tooltip {
+  background-color: #141413;
+  color: #faf9f5;
+}
+
+.theme-dark .tooltip {
+  background-color: #333130;
+  color: #e8e6dc;
+}
+
+/* ── Notices / notifications ────────────────────────────── */
+
+.notice-container .notice {
+  background-color: #141413;
+  color: #faf9f5;
+}
+
+.theme-dark .notice-container .notice {
+  background-color: #333130;
+  color: #e8e6dc;
+}
+
+/* ── Metadata / properties ──────────────────────────────── */
+
+.metadata-container {
+  font-family: var(--font-interface-theme);
+  font-size: 0.85em;
+  color: var(--text-muted);
+}
+
+/* ── Images ─────────────────────────────────────────────── */
+
+.markdown-rendered img {
+  border-radius: 4px;
+}
+
+/* ── Mermaid diagrams ───────────────────────────────────── */
+
+.mermaid {
+  margin: 1em 0;
+}
+
+/* ── Print styles ───────────────────────────────────────── */
+
+@media print {
+  body {
+    --background-primary: #ffffff;
+    --text-normal: #141413;
+    --text-muted: #6b6560;
+  }
+
+  h1, h2, h3 {
+    break-after: avoid;
+  }
+
+  blockquote, pre {
+    break-inside: avoid;
+  }
+}
